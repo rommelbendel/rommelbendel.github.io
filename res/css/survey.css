@@ -3,3 +3,10 @@
   --color-primary-dark: #107575;
   --color-accent: #13b5a4;
 }
+
+.RangeQuestion, .MultipleChoiceQuestion {
+  text-align: center;
+  border: medium solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 25px;
+}
