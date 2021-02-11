@@ -6,13 +6,25 @@
   <meta name="robots" content="noindex, nofollow"/>
   <meta name="viewport" content="width=device-width, initial-scale="1.0"/>
   <link rel="shortcut icon" type="image/x-icon" href="./res/img/ScanQ_Logo_128x128.ico"/>
-  <link rel="stylesheet" type="text/css" href="./css/survey.css"/>
+  <link rel="stylesheet" type="text/css" href="./res/css/survey.css"/>
+  <script type="text/javascript" src="./scripts/JavaScript/survey.js" defer></script>
 </head>
 <body>
+  <section id="infoText">
+    <p>
+      Vielen Dank f&uuml;r Deine Teilname an unserer Umfrage zu unserer App ScanQ!<br>
+      Die von dir eingegebenen Daten werden in einer nicht &ouml;ffentlichen Datenbank zwischengespeichert auf die nur wir Zugriff haben.
+      Nach angemessener Zeit werden wir eine lokale Kopie der Daten für Analysezwecke anfertigen und die online-Daten l&ouml;schen.
+      Die Umfrage l&auml;uft anonym ab und es ist nicht m&ouml;glich deine Identit&auml;t zu rekonstruieren.
+      Pers&ouml;nliche Angaben wie Alter und Klassenstufe sind nat&uuml;rlich freiwillig (*), helfen uns jedoch dabei
+      zielgruppenspezifische Resultate zu gewinnen.
+    </p>
+  </section>
   <section id="SurveyWrapper">
     <div class="RangeQuestion" id="Question1">
       <label for="inputAge">Alter *</label>
-      <input type="range" min="1" max="100" placeholder="Alter" class="QuestionValue" id="inputAge"/>
+      <p id="AgeSelected">12</p>
+      <input type="range" min="1" max="100" value="12" placeholder="Alter" onload="updateRangeValue('AgeSelected', this.value)" oninput="updateRangeValue('AgeSelected', this.value)" onchange="updateRangeValue('AgeSelected', this.value)" class="QuestionValue" id="inputAge"/>
     </div>
   </section>
 </body>
