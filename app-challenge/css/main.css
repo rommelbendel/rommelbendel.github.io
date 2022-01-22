@@ -44,10 +44,22 @@ body {
   #PageTitle {
     font-size: 180%;
   }
+  h1 {
+    font-size: 180%;
+  }
+  .Description {
+    font-size: 120%;
+  }
 }
 @media screen and (orientation: landscape) {
   #PageTitle {
     font-size: 220%;
+  }
+  h1 {
+    font-size: 300%;
+  }
+  .Description {
+    font-size: 180%;
   }
 }
 .NavBarRight {
@@ -116,11 +128,7 @@ body {
   margin-top: 5%;
 }
 .BoxWrapper h1 {
-  font-size: 300%;
   color: var(--primary);
-}
-.Description, .Description li {
-  font-size: 180%;
 }
 @media screen and (orientation: landscape) {
   #AppLogo {
