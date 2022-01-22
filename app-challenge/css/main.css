@@ -1,0 +1,178 @@
+:root {
+  --primary: #601029;
+  --primary-dark: #3E031D;
+  --accent: #682540;
+  --white: #fdfefe;
+  --link-color: #3498db;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Texturina:wght@200&display=swap');
+body {
+  font-family: 'Texturina', 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.NavBar {
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to right top, var(--primary), var(--primary-dark));
+  color: var(--white);
+}
+.NavBarLeft {
+  grid-row: 1;
+  grid-column: 1;
+}
+.NavBar ul {
+  margin: 0;
+}
+.NavBar li {
+  display: inline;
+  list-style-type: none;
+}
+#NavBarLogo {
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+}
+#PageTitle {
+  display: inline;
+  position: absolute;
+}
+@media screen and (orientation: portrait) {
+  #PageTitle {
+    font-size: 180%;
+  }
+}
+@media screen and (orientation: landscape) {
+  #PageTitle {
+    font-size: 220%;
+  }
+}
+.NavBarRight {
+  grid-row: 1;
+  grid-column: 2;
+}
+@media screen and (orientation: portrait) {
+  .NavBarRight ul {
+    display: none;
+  }
+}
+@media screen and (orientation: landscape) {
+  .NavBarRight ul {
+    text-align: right;
+    margin-right: 8rem;
+  }
+  .NavBarRight li {
+    display: inline;
+  }
+  .NavBarRight a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 150%;
+    padding: 3rem;
+  }
+  .NavBarRight a:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+  }
+}
+.ContentTransition {
+  display: grid;
+  background-image: url('../images/forest-1258845.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 1000px) {
+  .ContentTransition {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.InfoBox {
+  color: var(--white);
+  font-size: 180%;
+  padding-left: 1rem;
+  padding-top: 4rem;
+}
+@media screen and (orientation: landscape) {
+  .BoxWrapper {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+@media screen and (orientation: portrait) {
+  .BoxWrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+.BoxWrapper {
+  margin-top: 5%;
+}
+.BoxWrapper h1 {
+  font-size: 300%;
+  color: var(--primary);
+}
+.Description {
+  font-size: 180%;
+}
+@media screen and (orientation: landscape) {
+  #AppLogo {
+    width: 12.5%;
+  }
+}
+@media screen and (orientation: portrait) {
+  #AppLogo {
+    width: 60%;
+  }
+}
+#AppLogoWrapper {
+  margin-top: 10%;
+  text-align: center;
+}
+#AppSubtext {
+  text-align: center;
+  font-size: 120%;
+}
+#AppSubtext a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+#AppSubtext a:hover {
+  text-decoration: underline;
+}
+#DownloadLinkWrapper {
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+#downloadLink {
+  border: solid medium var(--primary);
+  border-radius: 20px;
+  color: var(--primary);
+  padding: 2%;
+  font-size: 120%;
+  text-decoration: none;
+}
+#downloadLink:hover {
+  background-color: var(--accent);
+  color: var(--white);
+}
+@media screen and (orientation: landscape) {
+  .Footer {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size: 120%;
+    text-align: center;
+  }
+}
+@media screen and (orientation: portrait) {
+  .Footer {
+    margin-top: 40%;
+    margin-bottom: 10%;
+    font-size: 100%;
+    text-align: center;
+  }
+}
