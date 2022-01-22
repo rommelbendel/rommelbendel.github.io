@@ -6,6 +6,10 @@
   --link-color: var(--accent);
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Texturina:wght@200&display=swap');
+@font-face {
+  font-family: 'LucidaHandwriting';
+  src: url('../res/fonts/Lucida\ Handwriting\ Italic.ttf');
+}
 body {
   font-family: 'Texturina', 'Roboto', sans-serif;
   scroll-behavior: smooth;
@@ -36,12 +40,9 @@ body {
   padding-right: 1rem;
   padding-top: 0.25rem;
 }
-/*
 #PageTitle {
-  display: inline;
-  position: absolute;
+  font-family: 'LucidaHandwriting';
 }
-*/
 @media screen and (orientation: portrait) {
   .NavBar ul {
     display: flex;
