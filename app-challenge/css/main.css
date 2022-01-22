@@ -36,13 +36,31 @@ body {
   padding-right: 1rem;
   padding-top: 0.25rem;
 }
+/*
 #PageTitle {
   display: inline;
   position: absolute;
 }
+*/
 @media screen and (orientation: portrait) {
+  .NavBar ul {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+  }
+  .NavBar li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   #PageTitle {
+    height: fit-content;
     font-size: 180%;
+    padding: 0;
+    margin: 0;
+  }
+  #NavBarLogo {
+    justify-self: center;
   }
   h1 {
     font-size: 180%;
@@ -53,6 +71,8 @@ body {
 }
 @media screen and (orientation: landscape) {
   #PageTitle {
+    display: inline;
+    position: absolute;
     font-size: 220%;
   }
   h1 {
@@ -93,13 +113,23 @@ body {
     text-decoration: underline;
   }
 }
+@media screen and (orientation: landscape) {
+  .ContentTransition {
+  background-image: url('../images/ScanQ_bg.png');
+  background-size: auto 82%;
+  }
+}
+@media screen and (orientation: portrait) {
+  .ContentTransition {
+  background-image: url('../images/ScanQ_bg_portrait.png');
+  background-size: auto 50%;
+  }
+}
 .ContentTransition {
   display: grid;
-  background-image: url('../images/ScanQ_bg.png');
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: auto 82%;
 }
 @media screen and (min-width: 1000px) {
   .ContentTransition {
