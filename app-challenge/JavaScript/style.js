@@ -7,7 +7,7 @@ $(document).ready(function() {
   var contentTransition = $('.ContentTransition');
 
   if (screenWidth >= screenHeight) {
-    const logoscale = screenWidth / 21 + 'px';
+    const logoscale = screenWidth / 24 + 'px';
     navBarLogo.css({
       width: logoscale,
       height: logoscale
