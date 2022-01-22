@@ -20,7 +20,7 @@ $(document).ready(function() {
     });
   }
 
-  const transitionMargin = navBar.height();
+  const transitionMargin = navBar.height() + 20;
   const transitionMarginTop = transitionMargin + 'px';
   const transitionHeight = screenHeight - transitionMargin + 'px';
   const xShift = -1 * contentTransition.position()['left'] + 'px';
