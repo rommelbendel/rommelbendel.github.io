@@ -51,6 +51,9 @@ body {
   }
 }
 .NavBarRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-row: 1;
   grid-column: 2;
 }
