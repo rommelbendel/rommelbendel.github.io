@@ -3,7 +3,7 @@
   --primary-dark: #2E8E93;
   --accent: #55c89d;
   --white: #fdfefe;
-  --link-color: #3498db;
+  --link-color: var(--accent);
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Texturina:wght@200&display=swap');
 body {
@@ -83,11 +83,11 @@ body {
 }
 .ContentTransition {
   display: grid;
-  background-image: url('../images/forest-1258845.jpg');
+  background-image: url('../images/ScanQ_bg.png');
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 85%;
 }
 @media screen and (min-width: 1000px) {
   .ContentTransition {
@@ -119,7 +119,7 @@ body {
   font-size: 300%;
   color: var(--primary);
 }
-.Description {
+.Description, .Description li {
   font-size: 180%;
 }
 @media screen and (orientation: landscape) {
