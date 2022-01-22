@@ -17,6 +17,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  padding: 10px 0px;
   background-image: linear-gradient(to right top, var(--primary), var(--primary-dark));
   color: var(--white);
 }
