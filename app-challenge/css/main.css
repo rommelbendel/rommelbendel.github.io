@@ -71,10 +71,24 @@ body {
   }
 }
 @media screen and (orientation: landscape) {
+  .NavBar ul {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+  }
+  .NavBar li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   #PageTitle {
-    display: inline;
-    position: absolute;
-    font-size: 220%;
+    height: fit-content;
+    font-size: 260%;
+    padding: 0;
+    margin: 0;
+  }
+  #NavBarLogo {
+    justify-self: center;
   }
   h1 {
     font-size: 300%;
@@ -85,8 +99,9 @@ body {
 }
 .NavBarRight {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
   grid-row: 1;
   grid-column: 2;
 }
